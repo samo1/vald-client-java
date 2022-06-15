@@ -41,6 +41,7 @@ if (hasProperty("release")) {
 } else {
     isDevBuild = true
     version += "-SNAPSHOT"
+    sonatypeRepositoryUrl = "https://nexus3.ba.innovatrics.net/repository/snapshots/"
 }
 
 nexusStaging {
