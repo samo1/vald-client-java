@@ -43,7 +43,9 @@ PROTOS = \
 	v1/vald/search.proto \
 	v1/vald/update.proto \
 	v1/vald/upsert.proto \
-	v1/payload/payload.proto
+	v1/payload/payload.proto \
+	v1/discoverer/discoverer.proto \
+	v1/manager/index/index_manager.proto
 
 PROTOS     := $(PROTOS:%=$(PROTO_ROOT)/%)
 JAVASOURCES = $(PROTOS:$(PROTO_ROOT)/%.proto=$(JAVA_ROOT)/$(API_ROOT)/%.java)
